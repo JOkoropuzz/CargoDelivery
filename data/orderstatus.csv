@@ -1,0 +1,6 @@
+nameorderstatus,descriptionorderstatus
+Processing,Wait operator call
+Confirmed,Wait to complite and payment
+Paid,Wait to complite
+Complited,Complited order
+Canceled,Canceled order

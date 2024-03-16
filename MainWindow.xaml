@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        x:Name ="MainWin1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="" MinWidth="900" MinHeight="450">
+    <Grid >
+        <ListView d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,165,0,0" Visibility="Hidden">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="№" />
+                    <GridViewColumn Header="Имя"/>
+                    <GridViewColumn Header="Телеофн"/>
+                    <GridViewColumn Header="Адрес загрузки"/>
+                    <GridViewColumn Header="Адрес доставки"/>
+                    <GridViewColumn Header="Дата создания"/>
+                    <GridViewColumn Header="Дата закрытия"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="findorderbtn" Content="Найти" HorizontalAlignment="Left" Margin="157,133,0,0" VerticalAlignment="Top" Width="60" Click="findorderbtn_Click"/>
+        <Label Content="№ Заказа" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="idordertb" HorizontalAlignment="Left" Margin="13,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Телефон" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="phonenumbertb" HorizontalAlignment="Left" Margin="13,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="___Без_имени_" Content="Фамилия" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="lastnametb" HorizontalAlignment="Left" Margin="13,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="createorderbtn" Content="Создать заказ" HorizontalAlignment="Left" Margin="239,133,0,0" VerticalAlignment="Top" Width="99" Click="createorderbtn_Click_1"/>
+        <DataGrid x:Name="dg1" AutoGenerateColumns="True" Margin="0,165,0,0"/>
+
+    </Grid>
+</Window>

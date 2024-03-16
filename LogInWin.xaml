@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp1.LogInWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Вход в систему" Height="200" Width="209" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBox x:Name="passwordtb" HorizontalAlignment="Center" Margin="0,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
+        <TextBox x:Name="logintb" HorizontalAlignment="Center" Margin="0,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
+        <Label x:Name="passwordlb" Content="Пароль:" HorizontalAlignment="Left" Margin="11,62,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="loginlb" Content="Логин:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="loginbtn" Content="Войти" HorizontalAlignment="Left" Margin="122,131,0,0" VerticalAlignment="Top" Width="69" Click="loginbtn_Click"/>
+
+    </Grid>
+</Window>

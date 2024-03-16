@@ -1,0 +1,4 @@
+namepaymentmethod,flagactive,descriptionpaymentmethod
+CardOnline,f,Card online on web
+Card,t,Card after delivery
+Cash,t,Cash after delivery
